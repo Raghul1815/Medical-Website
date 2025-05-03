@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .containerss {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .left-section .icon {
+    font-size: 36px;
+    color: #FF6A00;
+  }
+  
+  .left-section h3 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .left-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-top: 20px;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .feature {
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  .feature-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 72px;
+    color: rgba(26, 26, 26, 0.1);
+  }
+  
+  .feature h3 {
+    font-size: 20px;
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  .feature p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .feature h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #FF6A00;
+    margin-top: 5px;
+  }
+  

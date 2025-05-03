@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Medical care</title>
+        <link rel="stylesheet" href="">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <div class="container-fluid fixed-top">
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Medical care</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link mt-2">Home</a>
+                            <a href="service.html" class="nav-item active nav-link mt-2">Service</a>
+                            <a href="contact.html" class="nav-item nav-link mt-2">Contact</a>
+
+                            <div>
+                                <a href="#">
+                                   </a>
+                                <a href="#">
+                                     <img src="img/bot.png" width="65px">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-header py-5"><br><br>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                 <li class="breadcrumb-item"><a href="contact.html">Contact</a></li> 
+                <li class="breadcrumb-item active text-white">Service</li>
+            </ol>
+        </div>
+        <div class="container-fluid cares py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1>First Aid Guidance</h1>
+                        </div>
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 130px;">All Problems</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 130px;">Male</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 130px;">Female</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                        <span class="text-dark" style="width: 130px;">Childrens</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Sepsis
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                </div>
+                                                
+                                               <!-- <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4> First Aid for Sunburn
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                </div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Blisters
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Abrasions (Scrapes)
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Cuts (Lacerations)
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                    
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4> First Aid for Puncture Wounds
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Amputation
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Tetanus Infection
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Crush Injury
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Scalp Injury
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Appendicitis
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4> First Aid for Gallstones
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Sickle Cell Crisis
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                  
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4> First Aid for Blood Clot (Embolism)
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Fever
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                  
+                                                </div>
+                                                
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>First Aid for Hypotension (Low Blood Pressure)
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative cares-item">
+                                                <div class="cares-img">
+                                                   
+                                                </div>
+                                                
+                                                <br>
+                                                <br>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                   <h4>First Aid for Earwax Blockage
+                                                   </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div> -->  
+        
+
+    <div class="container">
+        <div class="cad">
+            <h5><i>Cardiac Arrest</i></h5><hr>
+            <h6>Step by Step First Aid Instructions:</h6><br>
+
+            <p>  1. Call Emergency Services Immediately: Dial the emergency number and provide clear information on the location and situation. <br><br>
+                2. Check Responsiveness: Gently shake the person and ask if they’re okay. If unresponsive, proceed to CPR. <br><br>
+                3. Begin CPR: Place hands in the center of the chest, press down firmly and quickly (100120 compressions per minute), and allow full chest recoil. <br><br>
+                4. Deliver Rescue Breaths if Trained: After every 30 compressions, give 2 rescue breaths if trained in CPR. <br><br>
+                5. Use an AED if Available: Turn on the AED and follow the voice prompts until emergency services arrive. <br><br></p>
+        </div>
+
+        <div class="cad">
+            <h5><i>Heart Attack</i></h5><hr>
+            <p>
+                 <h6>Step by Step First Aid Instructions:</h6>
+                1. Call Emergency Services Right Away: Provide details on location and symptoms, such as chest pain or difficulty breathing. <br><br>
+                2. Encourage the Person to Rest: Have them sit down calmly, preferably in a reclined position. <br><br>
+                3. Administer Aspirin (if safe): Give a 325 mg aspirin tablet to chew if the person is not allergic or contraindicated. <br><br>
+                4. Loosen Tight Clothing: This can help ease breathing and relieve discomfort. <br><br>
+                5. Stay with the Person: Keep them calm and observe for worsening symptoms until emergency help arrives. <br><br></p>
+       </div>
+
+        <div class="cad">
+           <h5><i>Stroke</i></h5>
+            <p>
+                 <h6>Step by Step First Aid Instructions:</h6><hr>
+                1. Call Emergency Services Immediately: Time is critical, so call at the first sign of stroke symptoms. <br><br>
+                2. Lay the Person Down with Head Elevated: This helps blood flow and can reduce symptoms while awaiting help. <br><br>
+                3. Check for FAST Symptoms: Note if the Face droops, Arm weakness occurs, Speech is slurred, and Time of symptom onset. <br><br>
+                4. Keep the Person Comfortable and Still: Avoid movement and keep them calm. <br><br>
+                5. Monitor Vital Signs: Watch for breathing and responsiveness until professionals arrive. <br><br>
+                
+                
+                </p>
+        </div>
+
+        <div class="cad">
+            <h5><i>Seizure</i></h5><hr>
+            <p> 
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Clear the Area: Move any objects away to prevent injury. <br><br>
+                2. Place a Soft Object Under the Head: A folded jacket or cushion works well to support the head. <br><br>
+                3. Do Not Restrain Movements: Let the seizure run its course, which is usually under two minutes. <br><br>
+                4. Stay Calm and Time the Seizure: If it lasts over 5 minutes, call emergency services. <br><br>
+                5. Check Responsiveness After the Seizure: Help the person to a safe sidelying position once it’s over and they begin to wake. <br><br>
+                </p>
+            </div>
+
+        <div class="cad">
+           <h5><i>Anaphylaxis</i></h5><hr>
+            <p> 
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Administer Epinephrine Immediately: Use an autoinjector (EpiPen) in the outer thigh, holding for 510 seconds. <br><br>
+                2. Call Emergency Services Immediately: Time is critical for severe allergies. <br><br>
+                3. Have the Person Sit Up and Stay Still: Encourage calmness and breathing, but limit movement.<br><br>
+                4. Loosen Tight Clothing: This may ease breathing and prevent discomfort. <br><br>
+                5. Monitor for Breathing or Swelling Changes: Prepare to use a second epinephrine dose if symptoms persist after 515 minutes, per medical advice. <br><br>
+                   
+            </div><br>
+
+        <div class="cad">
+            <h5><i>Asthma Attack</i></h5><hr>
+            <p> 
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Help Administer Their Inhaler: Shake the inhaler and give one puff; wait 30 seconds, then repeat as necessary. <br><br>
+                2. Encourage Slow Breathing: Inhale deeply and exhale slowly to help reduce panic and control breathing. <br><br>
+                3. Place the Person in a Comfortable Position: Sitting upright can make breathing easier. <br><br>
+                4. Offer Water if Needed: Small sips can help relax the airway. <br><br>
+                5. Seek Help if Symptoms Worsen: Call emergency services if the inhaler doesn’t relieve symptoms. <br><br></p>
+            </div>
+            
+        <div class="cad">
+            <h5><i>Hypothermia</i></h5><h1><hr>
+            <p>
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Move the Person to a Warm Area: Take them indoors or to a sheltered location. <br><br>
+                2. Remove Wet Clothing: Replace with dry clothes or wrap in blankets to insulate body heat. <br><br>
+                3. Provide Warm, NonAlcoholic Fluids: Only give fluids if the person is alert and conscious. <br><br>
+                4. Apply Warm Compresses: Use to the neck, chest, and groin but avoid direct heat. <br><br>
+                5. Monitor Breathing and Body Temperature: Call emergency services if the person remains cold or is unresponsive. <br><br>
+
+      </p>     </div><br>
+        <div class="cad">
+            <h5><i>Heatstroke</i></h5><hr>
+            <p> 
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Call Emergency Services: Report the location and symptoms immediately. <br><br>
+                2. Move to a Cooler Area: Shade or an airconditioned place works best. <br><br>
+                3. Apply Cold Compresses to Key Areas: Place on the neck, armpits, and groin. <br><br>
+                4. Fan the Person: Increasing air circulation helps to cool the body. <br><br>
+                5. Give Cool Water if Alert: Small sips help, but avoid excessive amounts. <br><br>
+                </p> </div>
+        <div class="cad">
+            <h5><i>Choking</i></h5><hr>
+            <p>  
+                <h6>StepbyStep First Aid Instructions:</h6>
+                1. Encourage Coughing: If they can speak, allow them to try to clear the object.<br><br>
+                2. Ask if They Need Help: If they can’t breathe, prepare to assist. <br><br>
+                3. Perform the Heimlich Maneuver: Stand behind, place fists above the navel, and thrust upwards firmly.<br><br>
+                4. Continue until Dislodged or Help Arrives: Repeat until the object clears or help comes. <br><br>
+                5. Call Emergency Services if Necessary: If the person loses consciousness, call for assistance immediately.<br><br></p>
+                </div>
+        <div class="cad">
+            <h5><i>Diabetic Emergency</i></h5><hr>
+            <p> 
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Offer a Quick Source of Sugar: Juice, candy, or glucose tablets work best. <br><br>
+                2. Encourage Small Sips of Water: Helps to stabilize after sugar intake. <br><br>
+                3. Monitor for Improvement: Watch for signs of improved alertness and stability. <br><br>
+                4. Provide Additional Sugar if Needed: If symptoms persist, another serving can help.<br><br>
+                5. Call for Medical Help if No Improvement: Emergency help may be needed if symptoms continue. <br><br>
+                </p>
+                
+            </div>
+        <div class="cad">
+            <h5><i>Bleeding</i></h5><hr>
+            <p>  
+                <h6>StepbyStep First Aid Instructions:</h6>
+                1. Apply Direct Pressure to the Wound: Use a clean cloth or gauze to press firmly. <br><br>
+                2. Elevate the Injured Area if Possible: Helps to reduce blood flow to the wound. <br><br>
+                3. Apply Additional Layers if Needed: Place more cloth or gauze over the wound if bleeding continues; do not remove the initial layer. <br><br>
+                4. Secure with a Bandage if Available: Wrap tightly enough to control bleeding. <br><br>
+                5. Seek Immediate Medical Help: Call emergency services if bleeding is uncontrollable or severe. <br><br></p>
+                </div>
+        <div class="cad">
+            <h5><i>Burns</i></h5><hr>
+            <p>
+                <h6>Step by Step First Aid Instructions:</h6>
+                1. Cool the Burn with Running Water: Use cool (not cold) water for 1015 minutes. <br><br>
+                2. Cover with a Sterile, Nonstick Bandage: Avoid applying creams or ointments. <br><br>
+                3. Remove Tight Clothing or Jewelry Near the Burn: Prevents swellingrelated issues. <br><br>
+                4. Elevate the Burned Area if Possible: Reduces swelling and throbbing. <br><br>
+                5. Seek Medical Help for Severe Burns: 2nd or 3rddegree burns, especially on face, hands, or joints, require urgent care. <br><br></p>
+             
+            </div>
+        <div class="cad">
+            <h5><i>broken bornes</i></h5><hr>
+            <p>
+                <h6> StepbyStep First Aid Instructions:</h6>
+                1. Immobilize the Area: Keep the injured limb in the position you found it. <br><br>
+                2. Apply Ice to Reduce Swelling: Wrap ice in a cloth and apply for 1015 minutes. <br><br>
+                3. Use a Splint if Available: Secure the limb with a splint to prevent further injury. <br><br>
+                4. Elevate if Possible and Safe: Helps to reduce swelling and pain. <br><br>
+                5. Get Professional Medical Help: Transport to a hospital for evaluation and treatment. <br><br>
+            </p>
+           
+            <</div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            </div>
+        <div class="cad">
+            <p>Arachery Game</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta molestias iure nostrum 
+            in maiores, ex omnis architecto perferendis soluta nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque laudantium, facere unde qui facilis provident explicabo tempora nisi omnis reprehenderit.</p>
+            
+    </div>
+<!--         
+  <div class="containerss">
+    <div class="left-section">
+      <div class="icon">🎓</div>
+      <h3>Guaranteed and certified</h3>
+      <h1>Online learning wherever and whenever.</h1>
+    </div>
+    <div class="right-section">
+      <div class="feature">
+        <span class="feature-number">01</span>
+        <h3>Flexible schedule</h3>
+        <p>Often refers to a work or study arrangement that allows individuals to adjust their working or learning hours to suit their personal needs.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-number">02</span>
+        <h3>Affordable Learning</h3>
+        <p>E-learning platform refers to an educational platform designed to be affordable and accessible to a wide range of users, providing high-quality learning resources at a lower cost.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-number">03</span>
+        <h3>Expert Instructor</h3>
+        <p>Feature highlights that the guides or teachers on the platform are highly qualified and experienced in their respective fields.</p>
+      </div>
+    </div>
+  </div> -->
+
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <h1 class="text-primary mb-0">Medical care</h1>
+                        <p class="text-secondary mb-0">Assistance in medical emergency</p>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Why this website!</h4>
+                    <p class="mb-4">Providing free medical emergency assistance to reach every person in all emergency situation </p>
+                    <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                  <h4 class="text-light mb-3">Website Info</h4>
+                    <a class="btn-link" href="">About Us</a>
+                    <a class="btn-link" href="">Contact Us</a>
+                    <a class="btn-link" href="">Privacy Policy</a>
+                    <a class="btn-link" href="">Terms & Condition</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Contact</h4>
+                    <p>Shree Venkateshwara Hi-tech Engineering college,  Othakuthirai, Gobichattipalayam,  Erode-638445</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Medical care</a>, All right reserved.</span>
+            </div>
+            <div class="col-md-6 my-auto text-center text-md-end text-white">
+              
+            Distributed By <a class="border-bottom" href="">Medical care</a>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
