@@ -10,9 +10,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Container Styles */
 .containersss {
     display: flex;
     flex-wrap: wrap;
@@ -29,18 +26,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Tablets (768px and below) */
 @media (max-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Create two columns for tablets */
         gap: 20px;
     }
-
-    
 }
 
-/* Mobile Phones (480px and below) */
 @media (max-width: 480px) {
     .container {
         display: flex;
@@ -51,9 +44,8 @@ body {
 
     .cad {
         width: auto;
-    }
-
-   
+    }   
 }
+
 
 
